@@ -1,0 +1,44 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1045414",
+      "name": "home",
+      "font_class": "home",
+      "unicode": "e642",
+      "unicode_decimal": 58946
+    },
+    {
+      "icon_id": "1053974",
+      "name": "产品",
+      "font_class": "youenservices",
+      "unicode": "e62b",
+      "unicode_decimal": 58923
+    },
+    {
+      "icon_id": "5248449",
+      "name": "齿轮",
+      "font_class": "chilun",
+      "unicode": "e627",
+      "unicode_decimal": 58919
+    },
+    {
+      "icon_id": "11057098",
+      "name": "人",
+      "font_class": "ren",
+      "unicode": "e53e",
+      "unicode_decimal": 58686
+    },
+    {
+      "icon_id": "13830002",
+      "name": "服 务",
+      "font_class": "fuwu",
+      "unicode": "e609",
+      "unicode_decimal": 58889
+    }
+  ]
+}

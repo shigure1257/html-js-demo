@@ -1,0 +1,660 @@
+.site-head .topbar {
+	width: 100%;
+	background-color: #0058AA;
+	height: 40px;
+}
+
+.site-head .topbar .tel {
+	height: 40px;
+	color: #FFFFFF;
+	font-size: 18px;
+	line-height: 40px;
+	float: right;
+}
+
+.site-head .main-nav {
+	padding: 19px 0 11px;
+}
+
+.site-head .main-nav .logo {
+	line-height: 91px;
+	color: #0058AA;
+	font-size: 64px;
+	float: left;
+	margin-right: 109px;
+	cursor: pointer;
+}
+
+.site-head .main-nav .nav-menu {
+	float: left;
+}
+
+.site-head .main-nav .nav-menu li {
+	float: left;
+	margin-right: 60px;
+	position: relative;
+}
+
+.site-head .main-nav .nav-menu li > a {
+	display: block;
+	width: 64px;
+}
+
+.site-head .main-nav .nav-menu li .icon-box {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	text-align: center;
+	box-sizing: border-box;
+	margin-bottom: 20px;
+	position: relative;
+	left: 7px;
+}
+
+.site-head .main-nav .nav-menu li .icon-box span {
+	font-size: 30px;
+	line-height: 50px;
+	color: grey;
+}
+
+.site-head .main-nav .nav-menu li:hover .icon-box {
+	background-color: #0058AA;
+	animation: pulse 1s infinite;
+}
+
+/* 鼠标移入时，图标有呼吸动画效果 */
+@keyframes pulse {
+	0% {
+		-webkit-transform: scale3d(1,1,1);
+		transform: scale3d(1,1,1);
+	}
+	50% {
+		-webkit-transform: scale3d(1.05,1.05,1.05);
+		transform: scale3d(1.05,1.05,1.05);
+	}
+	100% {
+		-webkit-transform: scale3d(1,1,1);
+		transform: scale3d(1,1,1);
+	}
+}
+
+.site-head .main-nav .nav-menu li:hover .icon-box span {
+	color: white;
+}
+
+.site-head .main-nav .nav-menu li .word-box {
+	font-size: 16px;
+	color: #545454;
+}
+
+.site-head .main-nav .search {
+	float: right;
+	width: 277px;
+}
+
+.site-head .main-nav .search input {
+	width: 212px;
+	height: 37px;
+	border: 1px solid #D3D3D3;
+	font-size: 14px;
+	outline: none;
+	padding-left: 15px;
+	float: left;
+	position: relative;
+	top: 32px;
+}
+
+.site-head .main-nav .search .soso-btn {
+	width: 48px;
+	height: 39px;
+	padding: 3px 7px 3px 8px;
+	background-color: #0058AA;
+	display: block;
+	float: left;
+	position: relative;
+	top: 32px;
+	box-sizing: border-box;
+}
+
+.site-head .main-nav .search .soso-btn img {
+	width: 33px;
+	height: 33px;
+}
+
+.banner {
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+/* 三张图片实现切换，列表宽度需要是浏览器宽度的三倍 */
+.banner .carousel_list {
+	width: 300%;
+}
+
+/* 每一张占浏览器宽度的百分之百 */
+.banner .carousel_list li {
+	float: left;
+	width: 33.33%;
+}
+.banner img {
+	width: 100%;
+	vertical-align: middle;
+}
+
+.banner .dots {
+	width: 42px;
+	height: 10px;
+	position: absolute;
+	z-index: 9999;
+	bottom: 50px;
+	left: 50%;
+	margin-left: -21px;
+}
+
+.banner .dots li {
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	float: left;
+	margin-right: 6px;
+	background-color: white;
+	cursor: pointer;
+}
+
+.banner .dots li:last-child {
+	margin-right: 0;
+}
+
+.banner .dots li.current {
+	background-color: #0058AA;
+}
+
+.ad {
+	padding-top: 38px;
+}
+
+.ad > .content-wrap {
+	position: relative;
+}
+
+.ad .prod-nav {
+	width: 1055px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.ad .prod-nav .ad-menu {
+	width: 2381px;
+	box-sizing: border-box;
+}
+
+.ad .ad-menu li {
+	float: left;
+	margin-right: 50px;
+	width: 171px;
+}
+
+.ad .ad-menu li:last-child {
+	margin-right: 0;
+}
+
+.ad .ad-menu li .pic-box {
+	width: 171px;
+	height: 175.7px;
+	margin-bottom: 10px;
+}
+
+.ad .ad-menu li .pic-box img {
+	width: 171px;
+	height: 175.7px;
+}
+
+.ad .ad-menu li .prod-word {
+	font-size: 18px;
+    color: #838383;
+}
+/* 按钮公共样式 */
+.common-left {
+	width: 48px;
+	height: 48px;
+	background: url(../images/prev.png);
+	position: absolute;
+}
+
+.common-right {
+	width: 48px;
+	height: 48px;
+	background: url(../images/next.png);
+	position: absolute;
+}
+
+.common-left:hover {
+	background: url(../images/prev_active.png);
+}
+
+.common-right:hover {
+	background: url(../images/next_active.png);
+}
+
+.ad .leftbtn {
+	top: 50%;
+	margin-top: -24px;
+	left: 0;
+}
+
+.ad .rightbtn {
+	top: 50%;
+	margin-top: -24px;
+	right: 0;
+}
+
+.ad .leftbtn .active ,.ad .rightbtn .active{
+	display: block;
+	z-index: 9999;
+}
+
+/* 每个板块的标题公共样式 */
+.title-box h1 {
+	font-size: 32px;
+    color: #696868;
+    height: 42px;
+    line-height: 42px;
+    text-align: center;
+}
+
+.title-box p {
+	font-size: 18px;
+    color: #9B9B9B;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.title-box i {
+	width: 93px;
+	margin: 0 auto;
+	display: block;
+	background-color: #0058AA;
+}
+
+.about-us {
+	padding-top: 75px;
+}
+
+.about-us .info-box {
+	width: 1155px;
+	height: 411px;
+	padding-top: 73px;
+	border-top: 2px solid #808080;
+	margin: 0 auto;
+	position: relative;
+	box-sizing: border-box;
+}
+
+.about-us .info-box .info-detail {
+	width: 238px;
+	margin-right: 147px;
+	height: 400px;
+	float: left;
+}
+
+.about-us .info-box .info-detail h1 {
+	font-size: 26px;
+    color: #0058AA;
+    height: 34px;
+    line-height: 34px;
+}
+
+.about-us .info-box .info-detail > p {
+	font-size: 21px;
+    color: #5A5A5A;
+    line-height: 41px;
+    height: 41px;
+}
+
+.about-us .info-box .info-detail i {
+	width: 142px;
+	height: 4px;
+	background: #0058AA;
+	margin-bottom: 20px;
+	display: block;
+}
+
+.about-us .info-box .info-detail .desc p {
+	font-size: 18px;
+    color: #7B7C7C;
+    line-height: 26px;
+    margin-bottom: 27px;
+}
+
+.about-us .info-box .info-detail .desc a {
+	display: block;
+	width: 130px;
+	height: 38px;
+	font-size: 18px;
+    color: #FFFFFF;
+    line-height: 38px;
+    text-align: center;
+    background-color: #0058AA;
+}
+
+@keyframes desc-a {
+	0% {
+		transform: rotate(-20deg);
+	}
+	100% {
+		transform: rotate(20deg);
+	}
+}
+
+.about-us .info-box .info-detail .desc a:hover {
+	animation: desc-a 0.5s 0s infinite alternate;
+}
+
+/* 消除图片放大带来的影响 */
+.about-us .info-box .info-pic {
+	width: 384px;
+	margin-right: 113px;
+	height: 256px;
+	float: left;
+	overflow: hidden;
+}
+
+/* 消除图片放大带来的影响 */
+.about-us .info-box .info-pic img {
+	width: 384px;
+	height: 256px;
+	overflow: hidden;
+}
+
+/* 鼠标移入时图片放大*/
+.about-us .info-box .info-pic img:hover {
+	transform: scale(1.2);
+	transition: transform 0.5s ease 0s;
+}
+
+.about-us .info-box .info-access {
+	width: 273px;
+	float: right;
+}
+
+.about-us .info-box .info-access .way {
+	position: relative;
+	width: 273px;
+	height: 61px;
+	margin-top: 10px;
+	background: #CCCCCC;
+}
+
+.about-us .info-box .info-access .way:hover {
+	background-color: #0058AA;
+	transition: background-color 0.7s ease 0s;
+}
+
+.about-us .info-box .info-access .way img{
+	width: 40px;
+	height: 34px;
+	position: absolute;
+	left: 30px;
+	top: 14px;
+}
+
+.about-us .info-box .info-access .way p {
+	position: absolute;
+	left: 89px;
+    color: #FFFFFF;
+}
+
+.about-us .info-box .info-access .way p.chs {
+	font-size: 22px;
+    color: #FFFFFF;
+    height: 29px;
+    line-height: 29px;
+    top: 10px;
+}
+
+.about-us .info-box .info-access .way p.eng {
+	font-size: 12px;
+    color: #FFFFFF;
+    line-height: 14px;
+    height: 14px;
+    top: 37px;
+}
+
+/* 使用遮盖实现标题两边有线的效果 */
+.about-us .info-box .title-box {
+	width: 155px;
+	background-color: white;
+	z-index: 999;
+	position: absolute;
+	left: 500px;
+	top: -43px;
+}
+
+.about-us .info-box .gywm h1 {
+    margin-bottom: 2px;
+}
+
+.about-us .info-box .gywm p {
+    margin-bottom: 11px;
+}
+
+.about-us .info-box .gywm i {
+	height: 0;
+	border: 1px solid #0058AA;
+}
+
+.bou-recom {
+	width: 100%;
+	height: 590px;
+	background-color: #EFF0F4;
+	padding-bottom: 68px;
+	padding-top: 70px;
+	box-sizing: border-box;
+}
+
+.bou-recom .content-wrap {
+	position: relative;
+}
+
+.bou-recom .title-box {
+	width: 232px;
+	margin: 0 auto;
+}
+
+.bou-recom .jptj p {
+    margin-bottom: 16px;
+}
+
+.bou-recom .jptj i {
+	height: 3px;
+}
+
+.bou-recom .bou-nav {
+	overflow: hidden;
+	width: 1081px;
+	margin: 0 auto;
+}
+
+.bou-recom .bou-nav .recomm-list {
+	width: 3657px;
+	height: 326px;
+	margin-top: 41px;
+}
+
+.bou-recom .bou-nav .recomm-list li {
+	float: left;
+	margin-right: 23px;
+	position: relative;
+	width: 345px;
+	height: 326px;
+}
+
+.bou-recom .bou-nav .recomm-list li:last-child {
+	margin-right: 0;
+}
+
+.bou-recom .bou-nav .recomm-list li img {
+	width: 345px;
+	height: 326px;
+}
+
+.bou-recom .bou-nav .recomm-list li p {
+	width: 325px;
+	height: 45px;
+	background: rgba(0,0,0,0.50);
+	font-size: 16px;
+    color: #FFFFFF;
+    line-height: 45px;
+    padding-left: 20px;
+    position: absolute;
+    bottom: 0;
+}
+
+.bou-recom .bou-nav .leftbtn {
+	top: 276px;
+	left: 0;
+}
+
+.bou-recom .bou-nav .rightbtn {
+	top: 276px;
+	right: 0;
+}
+
+.bou-recom .bou-nav .leftbtn .active,.bou-recom .bou-nav .rightbtn .active {
+	display: block;
+}
+
+.news-center {
+	height: 425px;
+	padding-top: 120px;
+}
+
+.news-center .content-box {
+	width: 1155px;
+	margin: 0 auto;
+	border-top: 1px solid #9B9B9B;
+	position: relative;
+}
+
+.news-center .content-box .title-box {
+	width: 155px;
+	background-color: white;
+	z-index: 999;
+	position: absolute;
+	left: 500px;
+	top: -42px;
+}
+
+.news-center .content-box .xwzx p {
+    margin-bottom: 16px;
+}
+
+.news-center .content-box .xwzx i {
+	height: 3px;
+}
+
+.news-center .content-box .new-detail {
+	top: 116px;
+	position: absolute;
+}
+
+.news-center .content-box .new-detail dl {
+	width: 503px;
+	height: 109px;
+	float: left;
+	margin-right: 74px;
+	margin-bottom: 40px;
+	position: relative;
+}
+
+.news-center .content-box .new-detail dl:last-child {
+	margin-right: 0;
+}
+
+.news-center .content-box .new-detail dl > dt {
+	font-size: 21px;
+    color: #4A4A4A;
+    height: 28px;
+    line-height: 28px;
+    position: absolute;
+    left: 103px;
+    top: 0;
+}
+
+.news-center .content-box .new-detail dl .number {
+	width: 65px;
+	height: 65px;
+	background:url(../images/talk-bg.png);
+	position: absolute;
+	top: 0;
+	left: 0;
+	font-size: 40px;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 65px;
+}
+@keyframes numdance {
+	from {
+		transform: translateY(0px);
+	}
+	to {
+		transform: translateY(-15px);
+	}
+}
+
+.news-center .content-box .new-detail dl .number:hover {
+	animation: numdance 0.5s ease 0s 1 alternate;
+}
+
+.news-center .content-box .new-detail dl .preview {
+    width: 400px;
+    position: absolute;
+    left: 103px;
+    top: 40px;
+}
+
+.news-center .content-box .new-detail dl .preview a {
+    font-size: 18px;
+    color: #4A4A4A;
+}
+
+footer .part1 {
+	background: #06142F;
+	height: 210px;
+}
+
+footer .part1 .r1 {
+	float: left;
+	font-size: 48px;
+    color: #FFFFFF;
+    height: 210px;
+    line-height: 210px;
+}
+
+footer .part1 ul {
+	float: left;
+	margin-left: 101px;
+	margin-top: 53px;
+}
+
+footer .part1 ul > li {
+	height: 40px;
+	font-size: 16px;
+    color: #FFFFFF;
+    line-height: 40px;
+}
+
+footer .part2 {
+	height: 30px;
+	background: #202C46;
+}
+
+footer .part2 p {
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	font-size: 14px;
+    color: #FFFFFF;
+}
